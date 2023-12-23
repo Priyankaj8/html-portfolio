@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<title>Basics of Python & Java</title>
+<style>
+	body{
+	     background-color:lightgrey;
+}
+</style>
+</head>
+<body>
+<a href="homepage.html">Home</a><br/>
+<h3>What you'll learn:</h3>
+<ul>
+    <li>Python Loops</li>
+    <li>Control Flow & Logical operators</li>
+    <li>Usage of Variables</li>
+    <li>Strings</li>
+    <li>Arrays</li>
+    <li>Methods</li>
+</ul>
+<h3>Cost of the course:</h3>
+<p>Rs.18,000/-</p>
+<h3>Duration of the course:</h3>
+<p>Four Months</p>
+<form action="/action_page.php">
+    <div>
+      <h3>Please fill in the details to register to this course.</h3>
+      <hr>
+  
+      <label for="name"><b>Name</b></label>
+      <input type="text" placeholder="Enter your name" name="name" id="name" required>
+  
+      <label for="phone"><b>Phone number</b></label>
+      <input type="number" placeholder="Enter your phone number" name="phone" id="phone" required>
+  
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter your email" name="email" id="email" required>
+      <hr>
+    </div>
+  </form>
+  <div id="my_form">
+    <button id="nextStep">Submit</button>
+  </div>
+  
+  <div id="thank_you" style="display: none;">
+    <p>Thank you!We'll get back to you soon</p>
+    <button type="submit">Close</button>
+  </div>
+  
+  <script>
+    var nextStep = document.querySelector('#nextStep');
+  
+    nextStep.addEventListener('click', function (e) {
+      e.preventDefault();
+      // Hide first view
+      document.getElementById('my_form').style.display = 'none';
+  
+      // Show thank you message element
+      document.getElementById('thank_you').style.display = 'block';
+    });
+  </script>
+</body>
+</html>
